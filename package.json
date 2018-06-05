@@ -1,29 +1,30 @@
 {
-  "name": "project2skrap",
+  "name": "groupproject2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "mocha",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "chai": "^4.1.2",
     "express": "^4.16.3",
-    "mocha": "^5.2.0",
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/honduranheat/groupProject2.git"
+    "url": "git+https://github.com/chelsg7/groupProject2.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/honduranheat/groupProject2/issues"
+    "url": "https://github.com/chelsg7/groupProject2/issues"
   },
-  "homepage": "https://github.com/honduranheat/groupProject2#readme"
+  "homepage": "https://github.com/chelsg7/groupProject2#readme"
 }

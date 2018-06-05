@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>
+        RecipeMe Page
+    </title>
+    <!-- Needed Tags-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bulma StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    
+    <!-- Stylesheet tags -->
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-item ">
+                <h1 class="title  is-size-1 ">
+                    RecipeMe
+                </h1>
+            </div>
+            <a class="navbar-item navbar-end" href="index.html">
+                <i class="fas fa-home"></i>
+                &nbsp; Home - Search for a Recipe
+            </a>
+            <a class="navbar-item navbar-end"  href="">
+                <i class="fas fa-book"></i>
+                &nbsp; View the Recipe Database
+            </a>
+            <a class="navbar-item navbar-end"  href="">
+                <i class="fas fa-sign-in-alt"></i>
+                &nbsp; Login to View Your Saved Recipes
+            </a>
+        </div>
+    </nav>
+<section class="section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-success">
+                    <div id="login">
+                        <p class="title">
+                            Login
+                        </p>
+                        <p class="subtitle"> 
+                            Login to View Your Submitted or Saved Recipes ?????
+                        </p>
+                        <div class = "content">
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    <input class="input" type="email" placeholder="Email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    <input class="input" type="password" placeholder="Password">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control">
+                                    <button class="button is-link">
+                                        Login
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- end login id-->
+                </article> <!-- end login tile-->
+                <article class="tile is-child notification is-info">
+                    <div class="content">
+                        <p class="title">
+                            Extra box
+                        </p>
+                        <p class="subtitle">
+                            Top Recipes ? 
+                            OR Reviews ????
+                        </p>
+                        <div class="content">
+                        </div>
+                    </div>
+                </article>
+            </div> <!-- contains login and extra box - column beside search-->
+            <div class="tile is-vertical is-8">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <div id="search">
+                            <p class="title">
+                                Search Here :
+                            </p>
+                            <div class = "content">
+                                <p class="subtitle">
+                                    Search by Recipe, Ingredient, Dietary Restrictions, or other Criteria
+                                </p>
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label class="label">
+                                            Search By:
+                                        </label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <p class="control is-expanded">
+                                                <input class="input" type="text" placeholder="Recipe Name">
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <p class="control is-expanded">
+                                                <input class="input" type="text" placeholder="Ingredient" >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label class="label">
+                                            Sort By... ????
+                                        </label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field is-narrow">
+                                            <div class="control">
+                                                <div class="select is-fullwidth">
+                                                    <select>
+                                                        <option>
+                                                            ........................
+                                                        </option>
+                                                        <option>
+                                                            RecipeMe Rating
+                                                        </option>
+                                                        <option>
+                                                            Time Preparation
+                                                        </option>
+                                                        <option>
+                                                            Calorie Content
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field is-horizontal">
+                                    <div class="field-label">
+                                            <label class="label">
+                                                Do you have specific Dietary Restrictions?
+                                            </label>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field is-grouped is-grouped-multiline">
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                                <div class="control">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                            Vegetarian
+                                                    </label>
+                                                </div>
+                                            </div> <!-- end grouped field-->
+                                        </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                        <div class="field-label">
+                                            <!-- Left empty for spacing -->
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <button class="button is-primary">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end dietary restrictions-->
+                            </div> <!--end content-->
+                        </div> <!-- end search id-->
+                    </article> <!-- end red tile-->
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">
+                                Vertical Tiles to display recipes ? ? ? 
+                            </p>
+                            <p class="subtitle">
+                                Maybe just top recipes or idk ???
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">
+                                Reviews could go here ? 
+                            </p>
+                            <p class="subtitle">
+                                Whatever you want
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">
+                                How many tiles for whatever purpose
+                            </p>
+                            <p class="subtitle">
+                                Maybe just top recipes or idk ???
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">
+                                ...tiles
+                            </p>
+                            <p class="subtitle">
+                                Bottom tile
+                            </p>
+                        </article>
+                    </div> <!-- end vert 2 tile div-->
+                    
+                </div>
+            </div> <!--end is-8 vertical -->
+            <!---->
+            <!---->
+            <!-- IF WE DO NOT WANT THE TILES SIZED WITH THE SEARCH BAR AND FULL CONTAINER WIDTH THERE IS SOME POTENTIAL CODE BELOW-->
+            <!---->
+            <!---->
+            <!-- <div class="tile is-ancestor">
+                <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">
+                                Vertical...
+                            </p>
+                            <p class="subtitle">
+                                Top tile
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">
+                                ...tiles
+                            </p>
+                            <p class="subtitle">
+                                Bottom tile
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-primary">
+                                <p class="title">
+                                    Vertical...
+                                </p>
+                                <p class="subtitle">
+                                    Top tile
+                                </p>
+                            </article>
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">
+                                    ...tiles
+                                </p>
+                                <p class="subtitle">
+                                    Bottom tile
+                                </p>
+                            </article>
+                    </div>
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">
+                                Vertical...
+                            </p>
+                            <p class="subtitle">
+                                Top tile
+                                Maybe Recipes could append here ? ?? ? ?
+                                These tiles are size responsive
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">
+                                ...tiles
+                            </p>
+                            <p class="subtitle">
+                                Bottom tile
+                            </p>
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">
+                                Vertical...
+                            </p>
+                            <p class="subtitle">
+                                Top tile
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">
+                                ...tiles
+                            </p>
+                            <p class="subtitle">
+                                Bottom tile
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">
+                                Vertical...
+                            </p>
+                            <p class="subtitle">
+                                Top tile
+                            </p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">
+                                ...tiles
+                            </p>
+                            <p class="subtitle">
+                                Bottom tile
+                            </p>
+                        </article>
+                    </div> 
+                </div>-->
+    </div> <!-- Container -->
+</section> <!--section-->
+</body>
+</html>
