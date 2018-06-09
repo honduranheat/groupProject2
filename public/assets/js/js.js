@@ -2,16 +2,20 @@ $(document).on("click", ".recipeBtn", function () {
 
 
     function getRecipe() {
+        
+        var apiKey = "d8e8948c4d70b8c78827596832285f57";
+        var appId = "ef5218c7";
+        var appId2 = "5b1562b5";
+        var apiKey2 = "bbb4077c8c6cf7f2526a1bef3aef09c1";
         var ingredient = document.getElementById("ingredientSearch").value;
         var dishName = document.getElementById("dishName").value;
         var healthLabel = document.getElementById("healthLabel").value;
-        var appId2 = "5b1562b5";
-        var apiKey2 = "bbb4077c8c6cf7f2526a1bef3aef09c1";
-        var apiKey = "d8e8948c4d70b8c78827596832285f57";
-        var appId = "ef5218c7";
+        var calorieMin = document.getElementById("calorieMin").value;
+        var calorieMax = document.getElementById("calorieMax").value;
+       
         console.log("what");
 
-        var url = `https://api.edamam.com/search?app_id=${appId2}&app_key=${apiKey2}&label=${dishName}&q=${ingredient}&healthLabels=${healthLabel}&count=3&from=0&to=4`;
+        var url = `https://api.edamam.com/search?app_id=${appId2}&app_key=${apiKey2}&label=${dishName}&q=${ingredient}&healthLabels=${healthLabel}&calories=${calorieMin}-${calorieMax}&count=3&from=0&to=4`;
         $.ajax({
             url: url,
             method: "GET",

@@ -27,7 +27,7 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("")(app);
+require("./models/")(app);
 require("")(app);
 require("")(app);
 
