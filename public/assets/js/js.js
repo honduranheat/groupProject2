@@ -45,6 +45,3 @@ $(document).on("click", ".recipeBtn", function () {
 });
 
 
-// - api is working and info is appearing on main page. feel free to mess with it. 
-// - in index.html i added some divs for the recipe order. 
-// - it needs a better way to get a random result from the JSON data. every so often I get an error. but the recipe is randomizing. change the 'hit' parameter to get more results
