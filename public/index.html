@@ -32,30 +32,31 @@
                 <span class="icon">
                     <i class="fas fa-home"></i>
                 </span>
-                &nbsp; Home - Search for a Recipe
+                &nbsp; Search
             </a>
             <a class="navbar-item navbar-end"  href="../public/dbdisplay.html">
                 <span class="icon">
                     <i class="fas fa-book"></i>
                 </span>
-                &nbsp; View the Recipe Database
+                &nbsp; View Our Database
             </a>
-            <a class="navbar-item navbar-end"  href="../public/savedPage.html">
-                <span class="icon">
-                    <i class="fas fa-sign-in-alt"></i>
-                </span>
-                &nbsp; Login to View Your Saved Recipes
-            </a>
-        </div>
-    </nav>
+            <p class = "level navbar-item">
+                <a class="button"  href="../public/savedPage.html" disabled>
+                    <span class="icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </span>
+                    &nbsp; Your Personal Home Page
+                </a>
+            </p>
+        </nav>
 <section class="section">
     <div class="container">
         <div class="tile is-ancestor">
             <div class="tile is-parent is-vertical">
                 <article class="tile is-child notification is-success">
                     <div id="login">
-                        <p class="title">
-                            Login
+                        <p class= "title">
+                            Login OR Sign Up
                         </p>
                         <p class="subtitle"> 
                             Login to View Your Submitted or Saved Recipes ?????
@@ -77,45 +78,60 @@
                                     </span>
                                 </p>
                             </div>
-                            <div class="field">
+                            <div class="field is-grouped is-grouped-centered">
                                 <p class="control">
                                     <button class="button is-link">
                                         Login
                                     </button>
+                                    <button class="button is-link">
+                                        Sign Up
+                                    </button>
                                 </p>
                             </div>
                         </div>
-                    </div> <!-- end login id-->
-                </article> <!-- end login tile-->
+                    <!-- </div> end login id-->
+                </article> <!--end login tile-->
                 <article class="tile is-child notification is-info">
                     <div class="content">
                         <p class="title">
-                            Extra box
+                            Recipe of the Day
                         </p>
                         <p class="subtitle">
-                            Top Recipes ? 
                             OR Reviews ????
                         </p>
                         <div class="content">
                         </div>
                     </div>
                 </article>
+                <article class="tile is-child notification is-success">
+                        <div class="content">
+                            <p class="title">
+                                Top Contributers
+                            </p>
+                            <p class="subtitle">
+                                OR Reviews ????
+                            </p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </article>
+                
             </div> <!-- contains login and extra box - column beside search-->
             <div class="tile is-vertical is-8">
                 <div class="tile is-parent">
                     <article class="tile is-child notification is-danger">
                         <div id="search">
-                            <p class="title">
-                                Search Here :
+                            <p class="title has-text-centered">
+                                Search Here
                             </p>
                             <div class = "content">
-                                <p class="subtitle">
-                                    Search by Recipe, Ingredient, Dietary Restrictions, or other Criteria
+                                <p class="subtitle has-text-centered">
+                                    What kind of Recipe are you looking for?
                                 </p>
                                 <div class="field is-horizontal">
                                     <div class="field-label is-normal">
                                         <label class="label">
-                                            Search By:
+                                            Search By Name:
                                         </label>
                                     </div>
                                     <div class="field-body">
@@ -124,13 +140,32 @@
                                                 <input class="input" type="text" placeholder="Recipe Name">
                                             </p>
                                         </div>
-                                        <div class="field">
+                                        <!-- <div class="field">
                                             <p class="control is-expanded">
                                                 <input class="input" type="text" placeholder="Ingredient" >
                                             </p>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
+                                <div class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                            <label class="label">
+                                                Or By Ingredient:
+                                            </label>
+                                        </div>
+                                        <div class="field-body">
+                                            <!-- <div class="field">
+                                                <p class="control is-expanded">
+                                                    <input class="input" type="text" placeholder="Recipe Name">
+                                                </p>
+                                            </div> -->
+                                            <div class="field">
+                                                <p class="control is-expanded">
+                                                    <input class="input" type="text" placeholder="Ingredient" >
+                                                </p>
+                                            </div>
+                                        </div>
+                                        </div>
                                 <div class="field is-horizontal">
                                     <div class="field-label is-normal">
                                         <label class="label">
@@ -143,7 +178,7 @@
                                                 <div class="select is-fullwidth">
                                                     <select>
                                                         <option>
-                                                            ........................
+                                                            Choose One
                                                         </option>
                                                         <option>
                                                             RecipeMe Rating
@@ -153,6 +188,12 @@
                                                         </option>
                                                         <option>
                                                             Calorie Content
+                                                        </option>
+                                                        <option>
+                                                            Alphabetical
+                                                        </option>
+                                                        <option>
+                                                            I want to know if this box will expand to any content
                                                         </option>
                                                     </select>
                                                 </div>
@@ -177,57 +218,57 @@
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            Vegan
                                                     </label>
                                                 </div>
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            Pescatarian
                                                     </label>
                                                 </div>
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            High Protein
                                                     </label>
                                                 </div>
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            Low Carb
                                                     </label>
                                                 </div>
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                        500 Calories or Less
                                                     </label>
                                                 </div>
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            Ketogenic
                                                     </label>
                                                 </div>
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            Gluten Free
                                                     </label>
                                                 </div>
                                                 <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            Raw Food Diet
                                                     </label>
                                                 </div>
-                                                <div class="control">
+                                                <!-- <div class="control">
                                                     <label class="checkbox">
                                                         <input type="checkbox">
-                                                            Vegetarian
+                                                            Mediterranean Diet
                                                     </label>
-                                                </div>
+                                                </div> -->
                                             </div> <!-- end grouped field-->
                                         </div>
                                     </div>
@@ -255,10 +296,10 @@
                                 Vertical Tiles to display recipes ? ? ? 
                             </p>
                             <p class="subtitle">
-                                Maybe just top recipes or idk ???
+                                Maybe just top recipes or reviews ???
                             </p>
                         </article>
-                        <article class="tile is-child notification is-warning">
+                        <!-- <article class="tile is-child notification is-warning">
                             <p class="title">
                                 Reviews could go here ? 
                             </p>
@@ -281,106 +322,11 @@
                             <p class="subtitle">
                                 Bottom tile
                             </p>
-                        </article>
+                        </article> -->
                     </div> <!-- end vert 2 tile div-->
                     
                 </div>
             </div> <!--end is-8 vertical -->
-            <!---->
-            <!---->
-            <!-- IF WE DO NOT WANT THE TILES SIZED WITH THE SEARCH BAR AND FULL CONTAINER WIDTH THERE IS SOME POTENTIAL CODE BELOW-->
-            <!---->
-            <!---->
-            <!-- <div class="tile is-ancestor">
-                <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">
-                                Vertical...
-                            </p>
-                            <p class="subtitle">
-                                Top tile
-                            </p>
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">
-                                ...tiles
-                            </p>
-                            <p class="subtitle">
-                                Bottom tile
-                            </p>
-                        </article>
-                        <article class="tile is-child notification is-primary">
-                                <p class="title">
-                                    Vertical...
-                                </p>
-                                <p class="subtitle">
-                                    Top tile
-                                </p>
-                            </article>
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">
-                                    ...tiles
-                                </p>
-                                <p class="subtitle">
-                                    Bottom tile
-                                </p>
-                            </article>
-                    </div>
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">
-                                Vertical...
-                            </p>
-                            <p class="subtitle">
-                                Top tile
-                                Maybe Recipes could append here ? ?? ? ?
-                                These tiles are size responsive
-                            </p>
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">
-                                ...tiles
-                            </p>
-                            <p class="subtitle">
-                                Bottom tile
-                            </p>
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">
-                                Vertical...
-                            </p>
-                            <p class="subtitle">
-                                Top tile
-                            </p>
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">
-                                ...tiles
-                            </p>
-                            <p class="subtitle">
-                                Bottom tile
-                            </p>
-                        </article>
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">
-                                Vertical...
-                            </p>
-                            <p class="subtitle">
-                                Top tile
-                            </p>
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">
-                                ...tiles
-                            </p>
-                            <p class="subtitle">
-                                Bottom tile
-                            </p>
-                        </article>
-                    </div> 
-                </div>-->
     </div> <!-- Container -->
 </section> <!--section-->
 <footer class="footer">
