@@ -1,0 +1,192 @@
+<h1>Submit new Post</h1>
+
+<form method="POST" action="/new-post">
+    Recipe Name:
+    <input type="text" name="title" /> 
+    Image Url: 
+    <input type="text" name="image" />
+    Ingredients:
+    <input type="text" name="ingredients" /> 
+    Steps:
+    <input type="text" name="steps" /> 
+    Health Label:
+    <input type="text" name="healthlabel" /> 
+     
+
+    <button type="submit">Submit Post</button>
+</form>
+
+{{!-- <div class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                            <label class="label">
+                                                Search By Name:
+                                            </label>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <p class="control is-expanded">
+                                                    <input class="input" type="text" placeholder="Recipe Name" id="dishName">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                            <label class="label">
+                                                Or By Ingredient:
+                                            </label>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <p class="control is-expanded">
+                                                    <input class="input" type="text" placeholder="Ingredient" id="ingredientSearch">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                            <label class="label">
+                                                Calories
+                                            </label>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <p class="control   is-expanded">
+                                                    <input class="input" type="text" placeholder="Min Calories" id="calorieMin">
+                                                </p>
+                                            </div>
+                                            <div class="field">
+                                                <p class="control is-expanded">
+                                                    <input class="input" type="text" placeholder="Max Calories" id="calorieMax">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                            <label class="label">
+                                                Sort By... ????
+                                            </label>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field is-narrow">
+                                                <div class="control">
+                                                    <div class="select is-fullwidth">
+                                                        <select>
+                                                            <option>
+                                                                Choose One
+                                                            </option>
+                                                            <option>
+                                                                RecipeMe Rating
+                                                            </option>
+                                                            <option>
+                                                                Time Preparation
+                                                            </option>
+                                                            <option>
+                                                                Calorie Content
+                                                            </option>
+                                                            <option>
+                                                                Alphabetical
+                                                            </option>
+                                                            <option>
+                                                                I want to know if this box will expand to any content
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                        <div class="field-label">
+                                                <label class="label">
+                                                    Do you have specific Dietary Restrictions?
+                                                </label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field is-grouped is-grouped-multiline">
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Wheat-Free
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Tree-Nut-Free
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Vegan
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Soy Free
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Pescatarian
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                            Shellfish Free
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Dairy Free
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Gluten Free
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                                Low Sugar
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Vegetarian
+                                                        </label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" id="healthLabel">
+                                                                Paleo
+                                                        </label>
+                                                    </div>
+                                                </div> <!-- end grouped field-->
+                                            </div>
+                                        </div>
+                                        <div class="field is-horizontal">
+                                            <div class="field-label">
+                                                <!-- Left empty for spacing -->
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <button class="button is-primary recipeBtn">
+                                                            Submit
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end dietary restrictions--> --}}
